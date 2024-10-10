@@ -5,9 +5,11 @@ from .business_process import BusinessProcess
 class Bots: 
     def __init__(self):
         self.adder = FactoryBot.create(FactoryBot.ADDER)
-        self.multiplier = None
+        self.multiplier = FactoryBot.create(FactoryBot.MULTIPLIER)
         self.printer = FactoryBot.create(FactoryBot.PRINTER)
-        self.subtractor = None
+        self.subtractor = FactoryBot.create(FactoryBot.SUBTRACTOR)
+
+        #subtractor
 
 class Orchestrator:
 
